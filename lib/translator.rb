@@ -12,9 +12,12 @@ end
 def get_japanese_emoticon(file_path, emoticon)
   hash = load_library(file_path)
   
-  if hash.has_value?(emoticon)
-    puts 'hell'
-  end
+  emoticon.each do |key, value|
+    value.each do |inner_key, inner_value|
+      if inner_value == emoticon
+        puts emoticon[:english]
+      end
+    end
 end
 
 def get_english_meaning(file_path, emoticon)
