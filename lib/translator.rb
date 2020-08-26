@@ -14,7 +14,7 @@ def get_japanese_emoticon(file_path, emoticon)
   
   hash.each do |key, value|
     if value.has_value?(emoticon)
-      return value[:english]
+      return value[:japanese]
     end
   end
   return 'Sorry, that emoticon was not found'
