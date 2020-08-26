@@ -12,7 +12,7 @@ end
 def get_japanese_emoticon(file_path, emoticon)
   hash = load_library(file_path)
   
-  emoticon.each do |key, value|
+  hash.each do |key, value|
     value.each do |inner_key, inner_value|
       if inner_value == emoticon
         puts emoticon[inner_value]
