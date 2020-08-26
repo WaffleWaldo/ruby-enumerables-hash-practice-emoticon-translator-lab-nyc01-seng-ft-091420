@@ -12,7 +12,9 @@ end
 def get_japanese_emoticon(file_path, emoticon)
   hash = load_library(file_path)
   
-  if 
+  if hash.has_value?(emoticon)
+    puts 'hell'
+  end
 end
 
 def get_english_meaning(file_path, emoticon)
