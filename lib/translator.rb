@@ -15,7 +15,7 @@ def get_japanese_emoticon(file_path, emoticon)
   hash.each do |key, value|
     value.each do |inner_key, inner_value|
       if inner_value == emoticon
-        puts emoticon[inner_value]
+        puts hash[:english]
       end
     end
   end
