@@ -25,7 +25,7 @@ def get_english_meaning(file_path, emoticon)
   
     hash.each do |key, value|
     if value.has_value?(emoticon)
-      return hash[key]
+      return hash(value)
     end
   end
   return 'Sorry, that emoticon was not found'
