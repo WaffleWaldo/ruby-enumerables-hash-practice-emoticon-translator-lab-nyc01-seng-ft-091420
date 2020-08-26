@@ -18,6 +18,7 @@ def get_japanese_emoticon(file_path, emoticon)
         puts emoticon[:english]
       end
     end
+  end
 end
 
 def get_english_meaning(file_path, emoticon)
