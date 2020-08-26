@@ -13,11 +13,7 @@ def get_japanese_emoticon(file_path, emoticon)
   hash = load_library(file_path)
   
   hash.each do |key, value|
-    value.each do |inner_key, inner_value|
-      if value[inner_value] == emoticon
-        puts hash[key][:english]
-      end
-    end
+    if value.include()
   end
   return 'Sorry, that emoticon was not found'
 end
